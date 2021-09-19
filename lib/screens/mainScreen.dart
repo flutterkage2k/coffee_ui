@@ -4,6 +4,7 @@ import 'package:timertime/screens/ourCoffeesScreen.dart';
 import 'package:timertime/screens/ourDifferenceScreen.dart';
 import 'package:timertime/screens/ourImpactScreen.dart';
 import 'package:timertime/screens/ourStoryScreen.dart';
+import 'package:timertime/screens/recipesScreen.dart';
 
 class mainScreen extends StatefulWidget {
   @override
@@ -29,11 +30,11 @@ class _mainScreenState extends State<mainScreen> with TickerProviderStateMixin {
               controller: _tabController,
               physics: NeverScrollableScrollPhysics(),
               children: [
-                ourStoryScreen(),
                 ourCoffeesScreen(),
                 ourStoryScreen(),
                 ourDifferenceScreen(),
                 ourImpactScreen(),
+                recipesScreen(),
               ],
             ),
           )
